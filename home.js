@@ -125,18 +125,18 @@ const manipulaClick = (e) => {
 
 const montaCard = (atleta) =>{
     const cartao = document.createElement("div");
-    const nome = document.createElement("h1");
     const imagem = document.createElement("img");
+    const nome = document.createElement("h1");
     const descri = document.createElement("p");
     const link = document.createElement("a");
 
     nome.innerHTML = atleta.nome;
     nome.style.fontFamily = 'sans-serif';
     cartao.appendChild(nome);
-
+    
     imagem.src = atleta.imagem;
     cartao.appendChild(imagem);
-
+    
 
     cartao.onclick = manipulaClick;
 

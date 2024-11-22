@@ -34,45 +34,54 @@ const montaPagina = (dados) => {
     const body = document.body;
     body.innerHTML = "";
 
+    const div1 = document.createElement("div");
+    const div2 = document.createElement("div");
+
+    div1.id = "div1"
+    div2.id = "div2"
+
     criaBotaoFechar();
 
     
     const nome = document.createElement("h1");
     nome.innerHTML = dados.nome;
-    body.appendChild(nome);
+    div1.appendChild(nome);
     
     const imagem = document.createElement("img");
     imagem.src = dados.imagem;
-    body.appendChild(imagem);
+    div1.appendChild(imagem);
     
     const descri = document.createElement("p");
     descri.innerHTML = dados.detalhes.trim(); // para remover espaços extras
-    body.appendChild(descri);
+    div2.appendChild(descri);
     
 
     const n_jogos = document.createElement("p");
     n_jogos.innerHTML = dados.n_jogos;
-    body.appendChild(n_jogos);
+    div2.appendChild(n_jogos);
 
     const posicao = document.createElement("p");
     posicao.innerHTML = `Posição: ${dados.posicao}`;
-    body.appendChild(posicao);
+    div2.appendChild(posicao);
 
     const nascimento = document.createElement("p");
     nascimento.innerHTML = `Data de Nascimento: ${dados.nascimento}`;
-    body.appendChild(nascimento);
+    div2.appendChild(nascimento);
 
     const naturalidade = document.createElement("p");
     naturalidade.innerHTML = `Naturalidade: ${dados.naturalidade}`;
-    body.appendChild(naturalidade);
+    div2.appendChild(naturalidade);
 
     const no_botafogo_desde = document.createElement("p");
     no_botafogo_desde.innerHTML =  `Está no Botafogo desde: ${dados.no_botafogo_desde}`;
-    body.appendChild(no_botafogo_desde);
+    div2.appendChild(no_botafogo_desde);
 
-    // link.innerHTML = "fechar";
-    // link.href = `home.html`;
-    // cartao.appendChild(link)
+    const elenco = document.createElement("p");
+    elenco.innerHTML = `Elenco: ${dados.elenco}`;
+    div2.appendChild(elenco)
+
+    body.appendChild(div1);
+    body.appendChild(div2);
 };
 
 if(sessionStorage.getItem('logado')){
