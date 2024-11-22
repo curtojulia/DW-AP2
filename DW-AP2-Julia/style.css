@@ -1,0 +1,66 @@
+body{
+  background-color: black;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#dica{
+  color: white;
+  margin-top: 5px;
+  
+}
+#titulo {
+    font-family: "Roboto Slab", serif; 
+    font-weight: 700;                 
+    font-optical-sizing: auto;       
+    font-style: normal;          
+    color: white;    
+    margin-top: 20px;
+    margin-left: 30px;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7); 
+    text-align: center;
+    margin: 10px 0 ;
+  }
+  #login{
+    text-align: center;
+    margin-top: 10px;
+  }
+  img{
+    width: 7rem;
+    margin-bottom: 20px;
+  }
+  #conteiner {
+    display: flex;
+    flex-direction: column; /* Padrão: elementos empilhados em telas pequenas */
+    align-items: center;
+    gap: 20px; /* Espaço entre a logo e o login */
+  }
+  
+  @media screen and ( min-width: 769px){
+    body{
+      background: url(botafogo-bc.webp);
+      background-size: cover;  /* Faz a imagem cobrir todo o fundo */
+      background-position: left;
+      background-repeat: no-repeat;
+    }
+    img { 
+    width: 7rem ;  
+    margin-bottom: 5px;
+   }
+   #conteiner {
+    flex-direction: row; /* Alinha os elementos lado a lado */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 50px;
+   }
+   #dica{
+    margin-left: 125px;
+   }
+   
+
+  
+}
+ 
+ 

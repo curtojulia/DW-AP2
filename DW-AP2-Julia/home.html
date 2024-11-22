@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atletas</title>
+    <script src="atleta-feminino.js"></script>
+    <script src="home.js" defer></script>
+    <link href="style_home.css" rel="stylesheet"/>
+    <link rel="icon" type="image/png" href="escudo.png" sizes="16x16">
+
+</head>
+<body>
+    <header id="header">
+        <a href="https://www.botafogo.com.br/">
+          <img  id="logo-header" src="escudo.png" alt="Logo Botafogo">
+        </a>
+          <div class="filtros">
+              <button class="botao" data-elenco="Masculino">Masculino</button>
+              <button class="botao" data-elenco="Feminino">Feminino</button>
+              <button class="botao" data-elenco="Completo">Completo</button>
+          </div>
+          <button id="sair">Sair</button>
+    </header>
+    <select id="elenco-select">
+        <option value="">Selecione o elenco</option>
+        <option value="feminino">Feminino</option>
+        <option value="masculino">Masculino</option>
+        <option value="completo">Completo</option>
+    </select>
+    <input type="text" placeholder="Buscar por nome" id="busca">
+   <div id="conteiner">
+   </div>
+</body>
+</html>
+
+
